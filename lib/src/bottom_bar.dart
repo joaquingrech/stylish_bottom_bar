@@ -353,6 +353,8 @@ class _StylishBottomBarState extends State<StylishBottomBar>
               ),
             )
           : Material(
+              // The decorated Container supplies the background; avoid another surface/shadow.
+              type: MaterialType.transparency,
               elevation: widget.elevation,
               // color: widget.backgroundColor ?? Colors.white,
               borderRadius: widget.borderRadius,
