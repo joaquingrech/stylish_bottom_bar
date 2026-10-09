@@ -357,6 +357,8 @@ class _StylishBottomBarState extends State<StylishBottomBar>
               ),
             )
           : Material(
+              // Preserve Cambia's decorated bar without an extra Material surface/shadow.
+              type: MaterialType.transparency,
               elevation: widget.elevation,
               borderRadius: widget.borderRadius,
               child: Container(
